@@ -13,5 +13,5 @@ router.register("actors", views.ActorViewSet)
 router.register("movies", views.MovieViewSet)
 router.register("movie_sessions", views.MovieSessionViewSet)
 urlpatterns = [
-    path("/", include(router.urls)),
+    path("", include(router.urls)),
 ]

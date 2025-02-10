@@ -47,7 +47,6 @@ class MovieSessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.MovieSession
         fields = ["id", "show_time", "movie", "cinema_hall"]
-        read_only = ["movie"]
 
 
 class MovieSessionListSerializer(MovieSessionSerializer):
